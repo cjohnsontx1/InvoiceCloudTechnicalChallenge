@@ -20,14 +20,18 @@ public class InternetTest
     public void AddAndValidateElements() {
         InternetHomePage HomePage = new(Driver);
         int numElements = 5;
+        // Navigate to homepage
         HomePage.GoToHomepage();
+        // Add n elements
         HomePage.AddElements(numElements);
+        // Verify number of elements on screen is equal to number of elements expected
         Assert.AreEqual(HomePage.GetAllElements(), numElements);
+        // Ability to delete elements by index
         // internetHomePage.DeleteElement(2);
     }
 
     [TearDown]
-    public void TearDown() {
+    public void Cleanup() {
         Driver.Close();
     }
 }

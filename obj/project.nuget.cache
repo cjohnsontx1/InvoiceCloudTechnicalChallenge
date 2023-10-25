@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7MrvDBA8myDJNHu6uAyslJ/N+wnYl7p8tY5DP45UhIhrCpqu4jIsvH6xJGySTn6OFl9Y+DDyfkqeW+KQFWmSJQ==",
+  "dgSpecHash": "1yd/kcOjS8XL1aMsFsY8uSuzqD3w1y5M5FkcJMnJzKHf1/TXGjMQk53cJQ3dNpFJBVytHOHNio3q3isgwpMFvQ==",
   "success": true,
   "projectFilePath": "c:\\Users\\cjohn\\InvoiceCloudTechnicalChallenge\\InvoiceCloudTechnicalChallenge.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\cjohn\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\cjohn\\.nuget\\packages\\nuget.frameworks\\6.5.0\\nuget.frameworks.6.5.0.nupkg.sha512",
     "C:\\Users\\cjohn\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\cjohn\\.nuget\\packages\\nunit.consolerunner\\3.16.3\\nunit.consolerunner.3.16.3.nupkg.sha512",
     "C:\\Users\\cjohn\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
     "C:\\Users\\cjohn\\.nuget\\packages\\nunittestadapter\\2.3.0\\nunittestadapter.2.3.0.nupkg.sha512",
     "C:\\Users\\cjohn\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
