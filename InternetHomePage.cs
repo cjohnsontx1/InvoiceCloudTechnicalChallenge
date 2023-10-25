@@ -16,13 +16,15 @@ class InternetHomePage {
         Assert.IsTrue(Title.Displayed);
     }
 
-    public IWebElement GetElement(int index) {
-        return driver.FindElement(By.CssSelector($"#elements > button:nth-child({index})"));
+    public void DeleteElement(int index) {
+        driver.FindElement(By.CssSelector($"#elements > button:nth-child({index})")).Click();
     }
 
     public int GetAllElements() {
         return driver.FindElements(By.CssSelector("#elements > button")).Count;
     }
+
+
 
     public void AddElements(int numElements = 1) {
         for (int i = 1; i <= numElements; i++) {

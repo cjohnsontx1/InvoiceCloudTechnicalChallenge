@@ -18,6 +18,7 @@ public class InternetTest
         internetHomePage.GoToHomepage();
         internetHomePage.AddElements(numElements);
         Assert.AreEqual(internetHomePage.GetAllElements(), numElements);
+        // internetHomePage.DeleteElement(2);
         driver.Close();
     }
 }
