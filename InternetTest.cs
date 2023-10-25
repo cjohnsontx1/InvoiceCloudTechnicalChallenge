@@ -27,7 +27,7 @@ public class InternetTest
         // Verify number of elements on screen is equal to number of elements expected
         Assert.AreEqual(HomePage.GetAllElements(), numElements);
         // Ability to delete elements by index
-        // internetHomePage.DeleteElement(2);
+        // HomePage.DeleteElement(2);
     }
 
     [TearDown]
