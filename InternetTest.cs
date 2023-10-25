@@ -5,20 +5,29 @@ using Assert = NUnit.Framework.Assert;
 
 namespace InvoiceCloudTechnicalChallenge;
 
-[TestClass]
+[TestFixture]
 public class InternetTest
 {
+    IWebDriver Driver;
 
-    [TestMethod]
+    [SetUp]
+    public void Setup() {
+        Driver = new ChromeDriver();
+        Driver.Manage().Window.Maximize();
+    }
+
+    [Test]
     public void AddAndValidateElements() {
-        IWebDriver driver = new ChromeDriver();
-        driver.Manage().Window.Maximize();
-        InternetHomePage internetHomePage = new(driver);
+        InternetHomePage HomePage = new(Driver);
         int numElements = 5;
-        internetHomePage.GoToHomepage();
-        internetHomePage.AddElements(numElements);
-        Assert.AreEqual(internetHomePage.GetAllElements(), numElements);
+        HomePage.GoToHomepage();
+        HomePage.AddElements(numElements);
+        Assert.AreEqual(HomePage.GetAllElements(), numElements);
         // internetHomePage.DeleteElement(2);
-        driver.Close();
+    }
+
+    [TearDown]
+    public void TearDown() {
+        Driver.Close();
     }
 }
